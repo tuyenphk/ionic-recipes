@@ -5,6 +5,11 @@
     </ion-button>
     <ion-title>{{ loadedRecipe.title }}</ion-title>
   </ion-toolbar>
+  <ion-buttons>
+    <ion-button (click)="onDeleteRecipe()">
+      <ion-icon name="trash-outline"></ion-icon>
+    </ion-button>
+  </ion-buttons>
 </ion-header>
 
 <ion-content>
@@ -29,4 +34,6 @@
       </ion-col>
     </ion-row>
   </ion-grid>
+
+  <div id="ion-alert"></div>
 </ion-content>
